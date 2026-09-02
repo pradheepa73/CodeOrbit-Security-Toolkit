@@ -1,0 +1,368 @@
+/* ============================================
+   CODE ORBIT SECURITY TOOLKIT
+   Professional Dark Theme - COMPATIBILITY FIXED
+   ============================================ */
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0a0a1a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* ============================================
+   SCROLLBAR STYLES
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
+
+.main-header {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    /* WebKit prefixed property for Safari/Chrome */
+    -webkit-background-clip: text;
+    /* Standard property for modern browsers */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.2rem;
+}
+
+.sub-header {
+    font-size: 1.1rem;
+    color: #8b9dc3;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ============================================
+   METRIC CARDS
+   ============================================ */
+
+.metric-card {
+    background: #1a1a2e;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid #2d3748;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    border-color: #667eea;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.metric-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.metric-label {
+    color: #8b9dc3;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+.stButton button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.stButton button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.stButton button:active {
+    transform: scale(0.98);
+}
+
+/* ============================================
+   SIDEBAR STYLES
+   ============================================ */
+
+.css-1d391kg {
+    background: #0f0f1a;
+    border-right: 1px solid #2d3748;
+}
+
+/* ============================================
+   EXPANDER STYLES
+   ============================================ */
+
+.streamlit-expanderHeader {
+    background-color: #1a1a2e !important;
+    border-radius: 8px !important;
+    border: 1px solid #2d3748 !important;
+    color: #e2e8f0 !important;
+}
+
+.streamlit-expanderHeader:hover {
+    border-color: #667eea !important;
+}
+
+.streamlit-expanderContent {
+    background: rgba(26, 26, 46, 0.5) !important;
+    border-radius: 0 0 8px 8px !important;
+    padding: 1rem !important;
+}
+
+/* ============================================
+   TAB STYLES
+   ============================================ */
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background: rgba(26, 26, 46, 0.5);
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: transparent;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    color: #e2e8f0;
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* ============================================
+   INPUT FIELD STYLES
+   ============================================ */
+
+.stTextInput input {
+    background: #1a1a2e !important;
+    border: 1px solid #2d3748 !important;
+    color: #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 0.6rem 1rem !important;
+}
+
+.stTextInput input:focus {
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2) !important;
+}
+
+.stTextInput input::placeholder {
+    color: #64748b !important;
+}
+
+.stTextArea textarea {
+    background: #1a1a2e !important;
+    border: 1px solid #2d3748 !important;
+    color: #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 0.6rem 1rem !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2) !important;
+}
+
+/* ============================================
+   SELECT BOX STYLES
+   ============================================ */
+
+.stSelectbox select {
+    background: #1a1a2e !important;
+    border: 1px solid #2d3748 !important;
+    border-radius: 8px !important;
+    color: #e2e8f0 !important;
+}
+
+/* ============================================
+   SLIDER STYLES
+   ============================================ */
+
+.stSlider .stSliderValue {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+}
+
+/* ============================================
+   METRIC STYLES
+   ============================================ */
+
+[data-testid="stMetric"] {
+    background: #1a1a2e;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    border: 1px solid #2d3748;
+}
+
+[data-testid="stMetric"]:hover {
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+[data-testid="stMetric"] label {
+    color: #8b9dc3 !important;
+}
+
+[data-testid="stMetric"] .stMetricValue {
+    color: #e2e8f0 !important;
+}
+
+/* ============================================
+   CODE BLOCK STYLES
+   ============================================ */
+
+.stCodeBlock {
+    background: #0a0a1a !important;
+    border-radius: 8px !important;
+    border: 1px solid #2d3748 !important;
+}
+
+.stCodeBlock pre {
+    color: #e2e8f0 !important;
+}
+
+/* ============================================
+   ALERT STYLES
+   ============================================ */
+
+.stAlert {
+    border-radius: 10px !important;
+}
+
+.stAlert-info {
+    border-left: 4px solid #3b82f6 !important;
+}
+
+.stAlert-success {
+    border-left: 4px solid #22c55e !important;
+}
+
+.stAlert-warning {
+    border-left: 4px solid #f59e0b !important;
+}
+
+.stAlert-error {
+    border-left: 4px solid #ef4444 !important;
+}
+
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+.footer {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem 0;
+    border-top: 1px solid #2d3748;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .main-header {
+        font-size: 2rem;
+    }
+    
+    .metric-value {
+        font-size: 2rem;
+    }
+    
+    .metric-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        font-size: 1.5rem;
+    }
+    
+    .metric-value {
+        font-size: 1.5rem;
+    }
+    
+    .sub-header {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.metric-card {
+    animation: fadeIn 0.6s ease forwards;
+}

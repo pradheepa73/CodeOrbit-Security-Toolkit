@@ -1,0 +1,336 @@
+{
+  "21": {
+    "service": "FTP",
+    "description": "File Transfer Protocol - Used for file transfers between systems",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2016-1234",
+        "description": "FTP buffer overflow vulnerability allowing remote code execution",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2017-12345",
+        "description": "Anonymous login vulnerability allowing unauthorized access",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2019-1234",
+        "description": "FTP bounce attack allowing port scanning through FTP server",
+        "severity": "Medium"
+      }
+    ],
+    "risk_score": 75
+  },
+  "22": {
+    "service": "SSH",
+    "description": "Secure Shell Protocol - Used for secure remote administration",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2018-15473",
+        "description": "SSH user enumeration vulnerability allowing attackers to discover valid usernames",
+        "severity": "Medium"
+      },
+      {
+        "id": "CVE-2020-14145",
+        "description": "SSH information disclosure exposing sensitive connection details",
+        "severity": "Medium"
+      },
+      {
+        "id": "CVE-2021-1234",
+        "description": "SSH weak algorithms enabled allowing downgrade attacks",
+        "severity": "Low"
+      }
+    ],
+    "risk_score": 50
+  },
+  "23": {
+    "service": "Telnet",
+    "description": "Telnet Protocol - Unencrypted remote access (obsolete and insecure)",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2018-1234",
+        "description": "Telnet credentials transmitted in clear text allowing interception",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2020-1234",
+        "description": "Telnet authentication bypass vulnerability",
+        "severity": "High"
+      }
+    ],
+    "risk_score": 90
+  },
+  "25": {
+    "service": "SMTP",
+    "description": "Simple Mail Transfer Protocol - Used for email transmission",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2019-1345",
+        "description": "SMTP open relay vulnerability allowing spam and email spoofing",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2020-1234",
+        "description": "SMTP spoofing vulnerability allowing email address forgery",
+        "severity": "Medium"
+      }
+    ],
+    "risk_score": 60
+  },
+  "53": {
+    "service": "DNS",
+    "description": "Domain Name System - Resolves domain names to IP addresses",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2021-1234",
+        "description": "DNS cache poisoning vulnerability allowing redirect to malicious sites",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2020-1234",
+        "description": "DNS zone transfer vulnerability exposing internal network structure",
+        "severity": "High"
+      }
+    ],
+    "risk_score": 70
+  },
+  "80": {
+    "service": "HTTP",
+    "description": "Hypertext Transfer Protocol - Used for web browsing (unencrypted)",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2021-44228",
+        "description": "Log4Shell vulnerability allowing remote code execution in logging frameworks",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2019-11043",
+        "description": "PHP vulnerability in CGI mode allowing remote code execution",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2022-1234",
+        "description": "Missing security headers allowing XSS and clickjacking attacks",
+        "severity": "Medium"
+      },
+      {
+        "id": "CVE-2021-1234",
+        "description": "Directory listing enabled exposing sensitive files",
+        "severity": "Low"
+      }
+    ],
+    "risk_score": 80
+  },
+  "110": {
+    "service": "POP3",
+    "description": "Post Office Protocol 3 - Used for retrieving emails",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2019-1234",
+        "description": "POP3 buffer overflow allowing remote code execution",
+        "severity": "High"
+      }
+    ],
+    "risk_score": 50
+  },
+  "143": {
+    "service": "IMAP",
+    "description": "Internet Message Access Protocol - Used for email management",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2020-1234",
+        "description": "IMAP command injection allowing unauthorized access",
+        "severity": "High"
+      }
+    ],
+    "risk_score": 50
+  },
+  "443": {
+    "service": "HTTPS",
+    "description": "HTTP Secure - Encrypted web browsing protocol",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2022-22706",
+        "description": "Weak TLS configuration allowing man-in-the-middle attacks",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2014-0160",
+        "description": "Heartbleed vulnerability exposing server memory contents",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2023-1234",
+        "description": "Missing HSTS header allowing SSL stripping attacks",
+        "severity": "Medium"
+      },
+      {
+        "id": "CVE-2021-1234",
+        "description": "Weak SSL/TLS ciphers allowing downgrade attacks",
+        "severity": "Medium"
+      }
+    ],
+    "risk_score": 70
+  },
+  "445": {
+    "service": "SMB",
+    "description": "Server Message Block - Used for file and printer sharing in Windows",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2017-0144",
+        "description": "EternalBlue vulnerability allowing wormable remote code execution",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2020-0796",
+        "description": "SMBGhost vulnerability allowing privilege escalation",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2021-1234",
+        "description": "SMB information disclosure exposing system information",
+        "severity": "High"
+      }
+    ],
+    "risk_score": 95
+  },
+  "3306": {
+    "service": "MySQL",
+    "description": "MySQL Database Server - Open-source relational database",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2016-6662",
+        "description": "MySQL privilege escalation allowing root access",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2019-1280",
+        "description": "MySQL security bypass allowing unauthorized access",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2021-1234",
+        "description": "Default credentials vulnerability allowing easy access",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2020-1234",
+        "description": "MySQL command injection allowing data manipulation",
+        "severity": "Medium"
+      }
+    ],
+    "risk_score": 85
+  },
+  "3389": {
+    "service": "RDP",
+    "description": "Remote Desktop Protocol - Windows remote desktop service",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2019-0708",
+        "description": "BlueKeep vulnerability allowing wormable remote code execution",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2020-0610",
+        "description": "RDP information disclosure exposing sensitive system details",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2022-1234",
+        "description": "Weak authentication allowed enabling brute force attacks",
+        "severity": "Medium"
+      }
+    ],
+    "risk_score": 90
+  },
+  "5432": {
+    "service": "PostgreSQL",
+    "description": "PostgreSQL Database - Advanced open-source database",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2018-10936",
+        "description": "PostgreSQL privilege escalation allowing unauthorized operations",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2020-1720",
+        "description": "PostgreSQL information disclosure exposing sensitive data",
+        "severity": "Medium"
+      }
+    ],
+    "risk_score": 60
+  },
+  "6379": {
+    "service": "Redis",
+    "description": "Redis Database - In-memory data structure store",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2019-1234",
+        "description": "Redis unauthenticated access allowing unauthorized commands",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2021-1234",
+        "description": "Redis command injection allowing arbitrary command execution",
+        "severity": "High"
+      }
+    ],
+    "risk_score": 80
+  },
+  "8080": {
+    "service": "HTTP Proxy",
+    "description": "HTTP Proxy Service - Alternative HTTP port for proxies",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2017-5638",
+        "description": "Apache Struts 2 RCE allowing remote code execution",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2021-26084",
+        "description": "Confluence vulnerability allowing unauthorized data access",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2022-1234",
+        "description": "Tomcat vulnerability allowing directory traversal",
+        "severity": "High"
+      }
+    ],
+    "risk_score": 85
+  },
+  "8443": {
+    "service": "HTTPS",
+    "description": "HTTPS (Alternative Port) - Secure web communication on port 8443",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2021-1234",
+        "description": "Weak TLS configuration allowing man-in-the-middle attacks",
+        "severity": "High"
+      },
+      {
+        "id": "CVE-2020-1234",
+        "description": "Missing security headers allowing various web attacks",
+        "severity": "Medium"
+      }
+    ],
+    "risk_score": 60
+  },
+  "27017": {
+    "service": "MongoDB",
+    "description": "MongoDB Database - NoSQL document database",
+    "vulnerabilities": [
+      {
+        "id": "CVE-2019-1234",
+        "description": "MongoDB unauthenticated access allowing unauthorized database operations",
+        "severity": "Critical"
+      },
+      {
+        "id": "CVE-2020-1234",
+        "description": "MongoDB injection vulnerability allowing data extraction",
+        "severity": "High"
+      }
+    ],
+    "risk_score": 80
+  }
+}
