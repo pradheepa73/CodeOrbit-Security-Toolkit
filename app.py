@@ -424,7 +424,7 @@ with st.sidebar:
 # ========== COMMAND CENTER ==========
 if page == "🏠 Command Center":
     if os.path.exists("images/banner.png"):
-        st.image("images/banner.png", use_column_width=True)  # ✅ FIXED
+        st.image("images/banner.png", use_column_width=True)
     
     st.markdown('<p class="main-header">🛡️ Code Orbit Security Toolkit</p>', unsafe_allow_html=True)
     st.markdown('<p class="sub-header">AI-Powered Cybersecurity Suite</p>', unsafe_allow_html=True)
@@ -539,7 +539,7 @@ if page == "🏠 Command Center":
             xaxis=dict(showgrid=False),
             yaxis=dict(showgrid=True, gridcolor='#e2e8f0', range=[0, 100])
         )
-        st.plotly_chart(fig, use_column_width=True)  # ✅ FIXED
+        st.plotly_chart(fig, use_container_width=True)
     
     with col2:
         st.subheader("🎯 Tool Usage")
@@ -556,22 +556,22 @@ if page == "🏠 Command Center":
             height=300,
             margin=dict(l=0, r=0, t=0, b=0)
         )
-        st.plotly_chart(fig, use_column_width=True)  # ✅ FIXED
+        st.plotly_chart(fig, use_container_width=True)
     
     st.subheader("⚡ Quick Actions")
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        if st.button("🔐 Check Password", use_column_width=True):  # ✅ FIXED
+        if st.button("🔐 Check Password", use_container_width=True):
             st.info("Navigate to Password Vault")
     with col2:
-        if st.button("🎣 Scan Email", use_column_width=True):  # ✅ FIXED
+        if st.button("🎣 Scan Email", use_container_width=True):
             st.info("Navigate to Phishing Detector")
     with col3:
-        if st.button("🌐 Scan Network", use_column_width=True):  # ✅ FIXED
+        if st.button("🌐 Scan Network", use_container_width=True):
             st.info("Navigate to Network Scanner")
     with col4:
-        if st.button("📊 Generate Report", use_column_width=True):  # ✅ FIXED
+        if st.button("📊 Generate Report", use_container_width=True):
             st.info("Navigate to Reports")
 
 # ========== PASSWORD VAULT ==========
@@ -787,7 +787,7 @@ elif page == "🌐 Network Scanner":
                     "Risk Score": port['risk_score']
                 })
             df = pd.DataFrame(data)
-            st.dataframe(df, use_column_width=True)  # ✅ FIXED
+            st.dataframe(df, use_container_width=True)
             
             if results['vulnerability_count'] > 0:
                 st.subheader("🚨 Vulnerabilities Found")
